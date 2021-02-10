@@ -7,9 +7,9 @@ const rl = readline.createInterface({
 
 function isAnagram() {
   // with user prompt
-  rl.question("Please enter the first string: ", (str1) => {
+  rl.question("Enter a string and Press Enter: ", (str1) => {
     let sortedStr1 = str1.toLowerCase().split("").sort().join("");
-    rl.question("Please enter the second string: ", (str2) => {
+    rl.question("Now enter another string: ", (str2) => {
       let sortedStr2 = str2.toLowerCase().split("").sort().join("");
       const result = sortedStr1 === sortedStr2;
       try {
