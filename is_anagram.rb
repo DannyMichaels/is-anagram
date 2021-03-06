@@ -2,7 +2,7 @@ def is_anagram
   
   def prompt(*args)
       print(*args)
-      gets
+      gets.chomp
   end
   
   answer1 = prompt "Please enter the first string: "
