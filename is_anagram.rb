@@ -13,7 +13,7 @@ def is_anagram
 
   sorted_str2 = answer2.downcase.split('').sort.join('')
 
-  result = sorted_str1 === sorted_str2; # will return true or false.
+  result = sorted_str1 === sorted_str2 # will return true or false.
 
 
   begin
