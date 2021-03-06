@@ -1,3 +1,5 @@
+# with prompt. 
+
 def is_anagram
   
   def prompt(*args)
@@ -5,26 +7,26 @@ def is_anagram
       gets.chomp
   end
   
-  answer1 = prompt "Please enter the first string: "
+    answer1 = prompt "Please enter the first string: "
 
-  sorted_str1 = answer1.downcase.split('').sort().join('')
+    sorted_str1 = answer1.downcase.split('').sort().join('')
 
-  answer2 = prompt "Please enter the second string: "
+    answer2 = prompt "Please enter the second string: "
 
-  sorted_str2 = answer2.downcase.split('').sort.join('')
+    sorted_str2 = answer2.downcase.split('').sort.join('')
 
-  result = sorted_str1 === sorted_str2 # will return true or false.
+    result = sorted_str1 === sorted_str2 # will return true or false.
 
+     begin
 
-  begin
+      puts "are #{answer1} and #{answer2} anagrams? #{result ? 'Yes' : 'No'}" # if true it will print yes, else it will print no
 
-  puts "are #{answer1} and #{answer2} anagrams? #{result ? 'Yes' : 'No'}" # if true it will print yes, else it will print no
+      rescue RuntimeError # catch error
 
-  rescue RuntimeError # catch error
-
-  puts "Runtime error encountered and rescued."
-  end
+      puts "Runtime error encountered and rescued."
+    
+     end
 
 end
 
-is_anagram
+is_anagram  # call the function
